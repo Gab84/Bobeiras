@@ -1,10 +1,52 @@
-print('1 = (Soma) 2 = (subtração) 3 = (Multiplicação) 4 = (Divisão) 5 = (progressão) 6 = ()')
+def soma (n1, n2):
+    return n1+n2 
+
+def subtracao (n1, n2):
+    return n1 - n2
+
+def multiplicacao (n1, n2):
+    return n1 * n2
+
+def divisao (n1, n2):
+    return n1 / n2
+
+def sobra (n1, n2):
+    return n1 % n2
+
+"""def soma (n1, n2):
+    return n1 +n2
+
+def soma (n1, n2):
+    return n1 +n2
+
+def soma (n1, n2):
+    return n1 +n2
+
+def soma (n1, n2):
+    return n1 +n2
+"""
 
 
-escolha = input('Deseja Calcular oque? Escolha de 1 a 10')
+while True :
+    print(' 1 = soma \n 2 = subtração \n 3 = multiplicação \n 4 = divisão \n 5 = Sobra ')
+    opcao = int(input('Escolha oque deseja : '))
+    
+    if opcao == 0 :
+        
+        print('numero invalo')
+    if opcao == 1:
+        n1=float(input('digite o numero 1 = '))
+        n2=float(input('digite o numero 2 = '))
+        resultado = soma(n1,n2)
+        print(f'o resultado da soma é {resultado}')        
+    if opcao == 2:
+        n1=float(input('digite o numero 1 = '))
+        n2=float(input('digite o numero 2 = '))
+        resultado = subtracao (n1, n2)
+        print(f'o resultado da soma é {resultado}')        
 
 
-
+""""""
 
 #progressão aritimetrica
 a_n = int(print('digite o valor que quer calcular'))
